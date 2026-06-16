@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* Contenedor para asegurar que la imagen se vea y sea responsiva */
+        .contenedor-imagen {
+            display: inline-block;
+            position: relative;
+            max-width: 100%;
+        }
+        .contenedor-imagen img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
 <body>
 
-<!-- La imagen tiene un map asociado llamado 'botones-lorenzo' -->
-<img src="image_5bc7f7.jpg" usemap="#botones-lorenzo" alt="Pagina Oficial LorenzoVarone">
+    <div class="contenedor-imagen">
+        <img src="image_5bc7f7.jpg" usemap="#image-map" alt="Pagina Oficial LorenzoVarone">
 
-<map name="botones-lorenzo">
-  <!-- 
-    shape="rect" define un área rectangular. 
-    coords="x1, y1, x2, y2" (coordenadas de la esquina superior izquierda y la inferior derecha) 
-  -->
-  <area shape="rect" coords="368, 477, 917, 687" href="https://www.youtube.com/watch?v=Ammz2ITZS6A&t=607s" target="_blank" alt="Stream">
-</map>
+        <map name="image-map">
+            <area target="_blank" alt="Stream" title="Ir a Stream" href="https://www.youtube.com/watch?v=Ammz2ITZS6A&t=607s" coords="368, 477, 917, 687" shape="rect">
+        </map>
+    </div>
 
 </body>
 </html>
